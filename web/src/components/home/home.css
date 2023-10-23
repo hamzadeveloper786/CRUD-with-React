@@ -1,0 +1,203 @@
+body {
+    background: #eae0e0;
+    margin: auto;
+    min-width: 375px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.5em;
+    color: cornflowerblue;
+}
+
+.drop-down {
+    background: #eae0e0;
+    color: #000000;
+    border: 0px;
+    padding: 0em;
+    margin: 0em;
+}
+
+.dropdown-menu.show {
+    background-color: #c0ffc7;
+    color: #e6e5ea;
+    border: 1px solid #e6e5ea;
+    width: 11em!important;
+}
+
+.drop-down-options {
+    color: #18171f;
+    border: 0px;
+    width: 8em!important;
+}
+
+.list {
+    width: 8em;
+    margin: 0em;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+a,
+.list>button {
+    border: none;
+    background: bottom;
+    color: black;
+    text-decoration: none!important;
+    margin: 0.5em 0.3em!important;
+}
+
+.icon {
+    margin-right: 0.5em!important;
+}
+.space-around {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5em;
+    padding: 0em;
+}
+
+.space-around>p {
+    color: #a4ffaf;
+}
+
+.space-around>i {
+    color: #e6e5ea;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    column-gap: 1em;
+}
+
+fieldset {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid blue;
+    border-radius: 0.5em;
+    background: transparent;
+}
+
+fieldset>legend {
+    color: olivedrab;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form>label {
+    margin: 0.2em;
+    color: olivedrab;
+}
+
+form>input {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid cornflowerblue;
+}
+
+form>textarea {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid cornflowerblue;
+}
+
+form>button {
+    width: 10em;
+    padding: 0.5em;
+    margin: 0.2em;
+    border: 1px solid cornflowerblue;
+    background-color: white;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+div.postSuccess {
+    margin: 0.5em;
+    color: blue;
+    padding: 0.2em;
+}
+
+div.postError {
+    margin: 0.5em;
+    color: red;
+    padding: 0.2em;
+}
+
+div.posts {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 1px solid blue;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+div.posts>h3{
+    margin: 0.5em;
+    color: #275a2d;
+}
+div.posts>p{
+    margin-left: 0.8em;
+    color: #6ec0ac;
+}
+
+div.posts>button {
+    margin: 0.5em;
+    padding: 0.5em;
+    color: black;
+    border-radius: 0.5em;
+    border: 1px solid cornflowerblue;
+}
+span{
+    margin-left: 0.8em;
+    color: silver;
+}
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+  .spinner-container{
+    margin-left: 2em;
+  }
+  div.post-container{
+    padding: 1em;
+    margin: 2em;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  div.post-container > div > h2{
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    color: darksalmon;
+  }
+  div.post-container > div > div#dropDown{
+    float: right;
+  }
+  div.post-container > div > p{
+    margin-left: 0.5em;
+    color: #282253;
+  }
