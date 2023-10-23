@@ -4,6 +4,7 @@ import { Trash, Github, Linkedin, Whatsapp, Youtube, PencilSquare} from "react-b
 import './home.css'
 
 const baseURL = "http://localhost:3001";
+
 const Home = () => {
 
     const postTitleInputRef = useRef(null);
