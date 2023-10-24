@@ -3,8 +3,6 @@ import axios from "axios";
 import { Trash, Github, Linkedin, Whatsapp, Youtube, PencilSquare} from "react-bootstrap-icons";
 import './home.css'
 
-const baseURL = "http://localhost:3001";
-
 const Home = () => {
 
     const postTitleInputRef = useRef(null);
@@ -17,7 +15,7 @@ const Home = () => {
     const getAllPosts = async () => {
         try{
         setIsLoading(true);
-        const response = await axios.get(`${baseURL}/api/v1/posts`);
+        const response = await axios.get(`/api/v1/posts`);
         console.log(response.data);
         setIsLoading(false);
         setAllPosts(response.data);
@@ -40,7 +38,7 @@ const Home = () => {
         try{
         setIsLoading(true);
 
-        const response = await axios.post(`${baseURL}/api/v1/post`, {
+        const response = await axios.post(`/api/v1/post`, {
             title: postTitleInputRef.current.value,
             text: postBodyInputRef.current.value
         })
@@ -59,7 +57,7 @@ const Home = () => {
     const deletePostHandler = async (_id) => {
         try {
           setIsLoading(true);
-          const response = await axios.delete(`${baseURL}/api/v1/post/${_id}`);
+          const response = await axios.delete(`/api/v1/post/${_id}`);
     
           setIsLoading(false);
           console.log(response.data);
@@ -78,7 +76,7 @@ const Home = () => {
         const text = e.target.children[2].value;
         try{
             setIsLoading(true);
-          const response = await axios.put(`${baseURL}/api/v1/post/${_id}`,{
+          const response = await axios.put(`/api/v1/post/${_id}`,{
             title: title,
             text: text
           });
